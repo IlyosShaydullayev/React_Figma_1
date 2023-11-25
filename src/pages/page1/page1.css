@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Roboto:wght@400;500;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box ;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.main > div{
+    padding: 10px;
+    margin-top: 33px;
+    border-radius: 20px;
+    border: 1px solid rgba(45, 121, 121, 0.20);
+    background: #FCFCFC;
+    box-shadow: 0px 10px 20px 0px rgba(42, 121, 122, 0.15);
+}
+.main > div .title{
+    color: #18A7A7;
+    font-family: Roboto;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+.main > div .text{
+    width: 190px;
+    color: var(--Dark, #333);
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 21px */
+}
