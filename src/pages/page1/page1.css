@@ -17,6 +17,11 @@
     background: #FCFCFC;
     box-shadow: 0px 10px 20px 0px rgba(42, 121, 122, 0.15);
 }
+.main > div:hover{
+    transform: scale(1.1);
+    transition-duration: .3s;
+    cursor: pointer;
+}
 .main > div .title{
     color: #18A7A7;
     font-family: Roboto;
