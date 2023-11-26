@@ -1,11 +1,11 @@
 import './App.css';
 import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
-import Page1 from './pages/page1/Page1'
+import Page3 from './pages/page3/Page3'
 
 function App() {
   return (
     <Router>
-      <Page1/>
+      <Page3/>
       <Routes>
         <Route></Route>
       </Routes>

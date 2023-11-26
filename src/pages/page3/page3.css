@@ -1,0 +1,161 @@
+*{
+    box-sizing: border-box;
+}
+.page-three{
+    display: flex;
+    width: 1000px;
+}
+.weekl{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+}
+.weekl p{
+    cursor: pointer;
+    color: var(--Opacity-2, #867777);
+    font-family: sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 0px;
+}
+.weekl h2{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: #000;
+    font-family: sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.product{
+    margin-bottom: 10px;
+    position: relative;
+    padding: 7px 8px;
+    display: flex;
+    width: 651px;
+    height: 150px;
+    flex-shrink: 0;
+    border: 1px solid var(--Opacity-1, #F7EEEC);
+}
+.product:hover{
+    background: #E9F7F7;
+}
+.infor      {
+    margin-left: 16px;
+    padding-top: 8px;
+}
+.infor h2{
+    color: #000;
+    font-family: sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.infor h4{
+    position: absolute;
+    top: -7px;
+    right: 15px;
+    color: var(--Dark, #333);
+    text-align: right;
+    font-family: sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.infor h3{
+    width: 372px;
+    color: var(--Opacity-2, #867777);
+    font-family: sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.infor div{
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 45px;
+}
+.infor div p{
+    color: #000;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.infor .icon{
+    cursor: pointer;
+    width: 41px;
+    height: 41px;
+    position: absolute;
+    right: 15px;
+    bottom: 20px;
+}
+
+.lasts{
+    margin: 80px 32px;
+}
+.lasts h3{
+    width: 225px;
+    color: var(--Dark, #333);
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.lastProduct{
+    display: flex;
+padding: 10.833px;
+align-items: flex-start;
+gap: 10.833px;
+background: rgba(31, 175, 172, 0.10);
+margin-bottom: 15px;
+}
+.lastProduct img{
+    width: 70px;
+    height: 70px;
+}
+.lastProduct h2{
+    margin: 0 0;
+    width: 156px;
+    color: var(--Dark, #333);
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.lastProduct p{
+    margin: 0 0;
+    flex-shrink: 0;
+    color: var(--Dark, #333);
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.lastProduct h4{
+    margin: 5px 0;
+    display: flex;
+    width: 92.182px;
+    height: 17.333px;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex-shrink: 0;
+    color: var(--Dark, #333);
+    font-family: Roboto;
+    font-size: 15.167px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
