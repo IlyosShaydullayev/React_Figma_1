@@ -1,0 +1,123 @@
+*{
+    box-sizing: border-box;
+}
+.page-two{
+    display: flex;
+    width: 1000px;
+}
+.container1{
+
+}
+.weekly{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+}
+.weekly p{
+    cursor: pointer;
+    color: var(--Opacity-2, #867777);
+    font-family: sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 0px;
+}
+.weekly h2{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: #000;
+    font-family: Roboto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.weekly h3{
+    margin-top: 0px;
+    color: var(--Dark, #333);
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.weekly .cards{
+    width: 944px;
+    height: 287px;
+    display: flex;
+    gap: 15px;
+}
+.card{
+    position: relative;
+    display: flex;
+    width: 228px;
+    height: 287px;
+    padding: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    flex-shrink: 0;
+    background: rgba(31, 175, 172, 0.10);
+}
+.card h2{
+    width: 165px;
+    color: var(--Dark, #333);
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.card p{
+    margin-top: 0px;
+    color: var(--Dark, #333);
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.card h4{
+    /* margin-top: 0px; */
+    color: var(--Dark, #333);
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.card .icon{
+    cursor: pointer;
+    width: 49.195px;
+    height: 49.195px;
+    position: absolute;
+    bottom: 22px;
+    right: 20px;
+}
+.line{
+    width: 800px;
+    margin: 9px auto;
+    border: 2px solid #3BAEAB;
+}
+.item-cards{
+    width: 960px    ;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 15px;
+}
+.item-cards div{
+    margin: 0 auto;
+    padding: 0 auto;
+    border: 1px solid var(--Opacity-1, #F7EEEC);
+    background: var(--White, #FFF);
+}
+.item-cards div h2{
+    margin-bottom: 0px;
+}
+.item-cards div h4{
+    margin-top: 0px;
+}
