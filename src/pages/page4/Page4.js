@@ -17,6 +17,9 @@ function Page4() {
     },
     {
       url: './images/thumb__600_0_0_0_crop.jpg'
+    }, 
+    {
+      url: './images/images.jpg'
     }
   ];
   const btnArr = ["Продавцы", "Отзывы", "Характеристики"];
@@ -122,15 +125,14 @@ function Page4() {
     }
   }
 
-  
+
   const [handleImg, setHandleImg] = useState(0)
-  //
 
   return (
     <div>
       <Navbar />
 
-      <div className="main">
+      <div className="main2">
         <p className="title">
           Главная / Моторные масла / GAZPROMNEFT Super 10W-40
         </p>

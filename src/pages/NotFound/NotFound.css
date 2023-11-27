@@ -1,0 +1,8 @@
+.not-found{
+    margin-top: 300px;
+    margin-left: 650px;
+    font-size: 30px;
+    font-family: sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+}

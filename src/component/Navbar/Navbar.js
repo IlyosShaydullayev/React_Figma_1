@@ -1,5 +1,6 @@
 import React from 'react'
 import './Navbar.css'
+import { Link } from 'react-router-dom' 
 
 function Navbar() {
   return (
@@ -12,11 +13,11 @@ function Navbar() {
           <div className="navbar">
             <img src="images/ezy.svg" alt="" />
             <div className="items">
-              <p >О нас</p>
-              <p >Помощь</p>
-              <p >Продавцу</p>
-              <p >Покупателю</p>
-              <p >Контакты</p>
+              <Link to={'/'}><p>О нас</p> </Link>
+              <Link to={'/page2'}><p>Помощь</p> </Link>
+              <Link to={'/page3'}><p>Продавцу</p> </Link>
+              <Link to={'/page4'}><p>Покупателю</p> </Link>
+              <Link to={'*'}><p>Контакты</p></Link>
             </div>
             <div className="search-part">
               <input type="text" placeholder="Введите номер детали, название или VIN" />
