@@ -1,12 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 
 import "./page4.css";
 import Navbar from "./../../component/Navbar/Navbar";
 import Footer from "./../../component/Footer/Footer";
 
 function Page4() {
-  const arr = ["1", "2", "3", "4", "5"];
-  const btnArr = ['Продавцы', 'Отзывы', 'Характеристики']
+  const arr = [
+    {
+      url: './images/download.jpg'
+    },
+    {
+      url: './images/download (1).jpg'
+    },
+    {
+      url: './images/download (2).jpg'
+    },
+    {
+      url: './images/thumb__600_0_0_0_crop.jpg'
+    }
+  ];
+  const btnArr = ["Продавцы", "Отзывы", "Характеристики"];
   const obj = [
     {
       name: "Happy store",
@@ -74,7 +87,7 @@ function Page4() {
             <br />
             <p style={{ fontSize: "14px" }}>Наименование</p>
           </div>
-          <div style={{marginLeft: '-215px'}}>
+          <div style={{ marginLeft: "-215px" }}>
             <p style={{ fontSize: "14px" }}>GAZPROMNEFT</p>
             <br />
             <p style={{ fontSize: "14px" }}>Моторное масло</p>
@@ -88,27 +101,30 @@ function Page4() {
             информация 2 <br /> Высота (мм) 64.1 мм <br /> Датчик износа
           </div>
           <div>
-            193.1 мм <br/> 19.1 мм <br/> передний мост <br/> с прижимной пластиной <br/> 64.1 мм <br/>
+            193.1 мм <br /> 19.1 мм <br /> передний мост <br /> с прижимной
+            пластиной <br /> 64.1 мм <br />
             подготовлено для датчика износа колодок
           </div>
         </div>
       </div>
     </div>
   );
+  
 
-
+  const [productInfoPage, setproductInfoPage] = useState(1);
   function handleClick(id) {
-    const mainBody = document.querySelector('.main-body')
-      if(id === 1){
-        
-      }
-    //   else if(id === 2){
-    //     mainBody.innerHTML = btn2
-    //   }
-    //   else if(id === 3){
-    //     mainBody.innerHTML = btn3
-    //   } 
+    if (id === 1) {
+      setproductInfoPage(1);
+    } else if (id === 2) {
+      setproductInfoPage(2);
+    } else if (id === 3) {
+      setproductInfoPage(3);
+    }
   }
+
+  
+  const [handleImg, setHandleImg] = useState(0)
+  //
 
   return (
     <div>
@@ -120,10 +136,10 @@ function Page4() {
         </p>
         <div className="main-top">
           <div>
-            <img src="./images/Rectangle 95.png" alt="" className="img" />
+            <img src={arr[handleImg].url} alt="" className="img" />
             <div>
-              {arr.map(() => (
-                <img src="./images/Rectangle 95.png" alt="" className="imgs" />
+              {arr.map((item, i) => (
+                <img src={item.url} alt="" onClick={() => setHandleImg(i)} className={(i) === handleImg ?  "active-img imgs " : 'imgs'} />
               ))}
             </div>
           </div>
@@ -156,13 +172,15 @@ function Page4() {
         <div className="katta-main">
           <div className="main-body">
             <div className="body-btns">
-                {
-                    btnArr.map((item, i) => (
-                        <button className="btn" onClick={handleClick(i)}>{item}</button>
-                    ))
-                }
+              {btnArr.map((item, i) => (
+                <button onClick={() => handleClick(i + 1)} className={ (i+1) === productInfoPage ?  "active btn " : "btn"}>
+                  {item}
+                </button>
+              ))}
             </div>
-            {btn3}
+            {productInfoPage === 1 && btn1}
+            {productInfoPage === 2 && btn2}
+            {productInfoPage === 3 && btn3}
           </div>
         </div>
       </div>

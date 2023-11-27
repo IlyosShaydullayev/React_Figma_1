@@ -6,6 +6,7 @@ import Page4 from './pages/page4/Page4';
 function App() {
   return (
     <Router>
+      {/* <Page1/> */}
       <Page4/>
       <Routes>
         <Route></Route>

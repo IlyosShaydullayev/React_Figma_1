@@ -31,6 +31,7 @@ button{
 .main-top div:first-child .img{
     width: 555px;
     height: 411px;
+    border: 1px solid grey;
 }
 .main-top div:first-child div{
     display: flex;
@@ -326,4 +327,8 @@ button{
     font-style: normal;
     font-weight: 500;
     line-height: 150%; /* 21px */
+}
+
+.active-img{
+    border: 1px solid red;
 }
