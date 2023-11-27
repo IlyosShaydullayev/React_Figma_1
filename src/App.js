@@ -5,7 +5,7 @@ import Page4 from './pages/page4/Page4'
 function App() {
   return (
     <Router>
-      <Page4/>
+      <Page4  />
       <Routes>
         <Route></Route>
       </Routes>

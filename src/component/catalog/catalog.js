@@ -14,7 +14,8 @@ function catalog() {
     <div>
         <div className='container'>
             <div className='nav-menu'>
-                <img src='images/Group 199.svg' alt='' className='catalog-element'/>
+                <img src='images/
+                 199.svg' alt='' className='catalog-element'/>
                 <img src='images/Group 198.svg' alt='' className='catalog-element-child'/>
             </div>
             <div className='catalog'>
