@@ -33,8 +33,8 @@ function Page3() {
             <div className='page-three'>
                 <Catalog/>
                 <div className='weekl'>
-                    <p>Главная / Запчасти / Колодки тормозные дисковые</p>
-                    <h2>Колодки тормозные дисковые</h2>
+                    <p className='weekl-par'>Главная / Запчасти / Колодки тормозные дисковые</p>
+                    <h2 className='weekl-title'>Колодки тормозные дисковые</h2>
                     <div className='products'>
                         {product}
                         {product}
